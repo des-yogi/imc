@@ -1,0 +1,19 @@
+.search-modal {
+  min-height: 165px !important;
+  height: auto !important;
+  bottom: unset !important;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+
+  &__body {
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,113 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  padding: 24px;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  @media (min-width: $screen-xl) {
+    padding: 56px 96px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &:hover {
+
+    #{$block-name}__spot {
+      transform: scale(1.5);
+    }
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(xl, 6);
+    margin-bottom: 24px;
+
+    &:nth-child(4n+1) {
+
+      #{$block-name}__spot {
+        top: -200px;
+        right: -200px;
+      }
+    }
+
+    &:nth-child(4n+2) {
+
+      #{$block-name}__spot {
+        bottom: -200px;
+        right: -200px;
+      }
+    }
+
+    &:nth-child(4n+3) {
+
+      #{$block-name}__spot {
+        bottom: -200px;
+        left: -200px;
+      }
+    }
+
+    &:nth-child(4n+4) {
+
+      #{$block-name}__spot {
+        top: -200px;
+        left: -200px;
+      }
+    }
+
+    &:nth-last-child(2) + &:nth-child(odd) {
+      @include col(xl, 12);
+    }
+  }
+
+  &__text,
+  &__btn {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-top: 0 !important;
+  }
+
+  &__intro {
+
+  }
+
+  &__btn {
+    margin-top: 24px;
+  }
+
+  &__num,
+  &__spot {
+    position: absolute;
+  }
+
+  &__num {
+    right: 24px;
+    bottom: -20px;
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 1;
+    color: $white;
+    opacity: 0.5;
+
+    @media (min-width: $screen-xl) {
+      right: 96px;
+    }
+  }
+
+  &__spot {
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, $main-color 0%, rgba(139, 208, 66, 0) 100%);
+    opacity: 0.5;
+    will-change: transform;
+    transition: transform $transition-time ease;
+  }
+}

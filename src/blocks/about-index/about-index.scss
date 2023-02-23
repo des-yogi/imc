@@ -1,0 +1,73 @@
+.about-index {
+  padding-top: 64px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 96px;
+  }
+
+  @media (max-width: $screen-xl - 1) {
+    margin-bottom: 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__text-col,
+  &__media-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 6);
+  }
+
+  &__text-col {
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__media-col {
+
+  }
+
+  &__text {
+
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__media {
+    position: relative;
+    border-radius: $border-radius-lg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .ytb-btn {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background-color: transparent;
+      background-size: 64px;
+      background-position: center;
+      background-image: svg-load('../blocks/about-index/bg-img/play-ytb.svg', fill=$white);
+      transition: background $transition-time ease;
+    }
+
+    &:hover,
+    &:focus {
+
+      .ytb-btn {
+        background-image: svg-load('../blocks/about-index/bg-img/play-ytb.svg', fill=$link-color--hover);
+      }
+    }
+  }
+}

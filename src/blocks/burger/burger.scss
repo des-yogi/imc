@@ -1,0 +1,8 @@
+.burger {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-xl) {
+    display: none;
+  }
+}

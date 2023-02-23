@@ -1,0 +1,97 @@
+<!--DEV
+@ @include('blocks/service-index/service-index.html')
+
+-->
+
+<section class="container  service-index">
+
+  <div class="row  service-index__text-wrapper">
+
+    <div class="service-index__img-col">
+      <div class="service-index__img-wrapper">
+        <div class="embed-responsive embed-responsive--1-1  service-index__img">
+          <img src="img/cubes.svg" width="375" height="412" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="service-index__text-col">
+      <div class="service-index__text">
+        <h2 class="visually-hidden">Наші послуги</h2>
+        <p class="h2 service-index__title">Для кого наші послуги?</p>
+        <div class="service-index__intro">
+          <p>Наш, більш ніж 10-річний досвід дозволив виробити рішення для різних груп користувачів: від великих корпорацій, що мають розгалужену філіальну мережу, до домашніх користувачів.</p>
+          <p>Для зручності наших клієнтів послуги різним категоріям користувачів надаються в рамках різних проєктів, отже, ми можемо врахувати потреби та специфіку кожної з цих груп.</p>
+        </div>
+        <div class="service-index__link-wrapper">
+          <a href="services.html">Усі послуги</a>
+          <span class="decor-icon" aria-hidden="true">
+            <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-down-left"></use></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row  service-card__wrapper" role="list">
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "Доступ до мережі Інтернет",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "1"
+      })
+    </div>
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "Корпоративні мережі",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет. Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "2"
+      })
+    </div>
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "Захист інформації",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "3"
+      })
+    </div>
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "IoT мережі",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "4"
+      })
+    </div>
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "Побудова ВОЛЗ",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "5"
+      })
+    </div>
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "Послуги операторам",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "6"
+      })
+    </div>
+
+    <div class="service-card__col" role="listitem">
+      @@include('../../blocks/service-card/service-card.html', {
+        "title": "Відеонагляд",
+        "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+        "num": "7"
+      })
+    </div>
+
+  </div>
+
+</section>

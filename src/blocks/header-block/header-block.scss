@@ -1,0 +1,21 @@
+.header-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  &__title {
+    flex: 1 1 auto;
+    margin-right: 24px;
+    margin-top: 0;
+    //margin-bottom: 0;
+  }
+
+  &__link {
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,34 @@
+.project-slider {
+  padding: 64px 0;
+
+  $block-name:                &; // #{$block-name}__element
+
+  // &__title {
+
+  // }
+
+  &__inner {
+
+    @media (max-width: $screen-md - 1) {
+      padding-left: 12px !important;
+    }
+
+    @media (max-width: $screen-xl - 1) {
+      padding-left: 40px;
+    }
+  }
+
+  &__slide {
+    width: 288px;
+    height: 161px;
+    overflow: hidden;
+    border-radius: $border-radius-lg;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
