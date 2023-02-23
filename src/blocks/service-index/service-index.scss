@@ -1,0 +1,55 @@
+.service-index {
+  margin-bottom: 40px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__text-wrapper {
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__img-col {
+    @include col(xl, 6);
+
+    @media (max-width: $screen-xl - 1) {
+      display: none;
+    }
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 6);
+  }
+
+  &__img-wrapper {
+    padding: 60px 105px;
+    //backdrop-filter: blur(238px);
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-top: 0 !important;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}

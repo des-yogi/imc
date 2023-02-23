@@ -1,0 +1,98 @@
+.btn {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-sizing: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0  $field-padding-horizontal;
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  line-height: $line-height;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  color: $title-color;
+  border-radius: $border-radius;
+  border: 1px solid $link-color;
+  background-color: $link-color;
+  background-image: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all $transition-time ease;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $title-color;
+    text-decoration: none;
+    background-color: $link-color--hover;
+    border-color: $link-color--hover;
+  }
+
+  &--disabled,
+  &:disabled {
+    cursor: not-allowed;
+    color: $text-muted; //gray-1
+    background-color: $block-bg;
+    border-color: $block-bg;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &--icon {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+
+    @media (max-width: $screen-md - 1) {
+      width: 48px;
+      height: 48px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--outline {
+    background-color: $white;
+    border-color: $border-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-color--hover;
+      background-color: $white;
+      border-color: $link-color--hover;
+    }
+
+    &--disabled,
+    &:disabled {
+      background-color: $white;
+      border-color: $gray-2 !important;
+    }
+
+    &--close {
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-danger;
+        background-color: $white;
+        border-color: $color-danger;
+      }
+    }
+  }
+}

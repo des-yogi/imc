@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Просимо вибачення, але це утруднює використання даного сайту. You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content">
+
+        @@include('blocks/about-index/about-index.html')
+
+        @@include('blocks/service-index/service-index.html')
+
+        @@include('blocks/project-slider/project-slider.html')
+
+        <section class="container  news-card__wrapper">
+
+          <div class="header-block">
+            <h2 class="header-block__title">Про нас пишуть</h2>
+            <a href="#" class="header-block__link">Усі новини</a>
+          </div>
+
+          <div class="row" role="list">
+
+            <div class="news-card__col" role="listitem">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "news-1",
+                "title": 'Компанія «ІМК» підтвердила відповідність своїх виробничих процесів вимогам…',
+                "intro": ''
+              })
+            </div>
+
+            <div class="news-card__col" role="listitem">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "news-2",
+                "title": 'Компанія «ІМК» підтвердила відповідність…',
+                "intro": ''
+              })
+            </div>
+
+            <div class="news-card__col" role="listitem">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "news-3",
+                "title": 'Компанія «ІМК» підтвердила відповідність своїх виробничих процесів вимогам…',
+                "intro": ''
+              })
+            </div>
+
+          </div>
+        </section>
+
+        @@include('blocks/license-slider/license-slider.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-modal/search-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

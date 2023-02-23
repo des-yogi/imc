@@ -1,0 +1,46 @@
+.news-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4);
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    flex: 0 0 auto;
+    margin-bottom: 24px;
+    border-radius: $border-radius-lg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
