@@ -1,0 +1,31 @@
+.order-form {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  border-top: 1px solid $border-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  textarea {
+    min-height: 160px;
+
+    @media (min-width: $screen-xl) {
+      min-height: 167px;
+    }
+  }
+
+  &__text-wrapper {
+    margin-bottom: 24px;
+  }
+
+  &__text-col,
+  &__form-left-col,
+  &__form-right-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 5);
+  }
+
+  &__subtitle {
+    margin-top: 0 !important;
+  }
+}

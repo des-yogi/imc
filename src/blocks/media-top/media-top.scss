@@ -1,0 +1,100 @@
+.media-top {
+  position: relative;
+  min-height: 370px;
+  padding-bottom: 40px;
+  color: $white;
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 64px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .breadcrumbs {
+    position: relative;
+    z-index: 1;
+  }
+
+  .breadcrumbs__item {
+
+    &:not(:last-child)::after {
+      color: inherit;
+    }
+
+    &:last-child {
+
+      .breadcrumbs__link {
+        text-decoration: none;
+        color: inherit;
+        opacity: 1;
+      }
+    }
+  }
+
+  .breadcrumbs__link {
+    color: inherit;
+    opacity: 0.7;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &__overlay {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($black, 0.4);
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(50% 50% at 50% 50%, $main-color 0%, rgba(139, 208, 66, 0) 100%);
+      opacity: 0.4;
+    }
+
+    &::before {
+      top: -300px;
+      right: -300px;
+    }
+
+    &::after {
+      bottom: -300px;
+      left: -300px;
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 7);
+  }
+
+  &__title {
+    color: inherit;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+.case-card {
+  text-decoration: none;
+  color: $title-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    padding-bottom: 64px;
+  }
+
+  &__wrapper-title {
+    margin-top: 0 !important;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4);
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    border-radius: $border-radius-lg;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    padding: 24px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

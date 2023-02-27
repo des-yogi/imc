@@ -1,0 +1,70 @@
+.review-block {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  border-top: 1px solid $border-color;
+
+  @media (max-width: $screen-xl - 1) {
+    padding-bottom: 96px - 24px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__review-col {
+    @include col(xs, 12);
+    @include col(xl, 8);
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__brands-col {
+    @include col(xs, 12);
+    @include col(xl, 4);
+  }
+
+  &__brand-item-col {
+    @include col(xs, 6);
+    @include col(md, 3);
+    @include col(xl, 6);
+    margin-bottom: 24px;
+  }
+
+  &__article {
+    position: relative;
+    max-width: 100%;
+    padding: 64px 24px 24px;
+    background-color: $block-bg;
+    border-radius: $border-radius-lg;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px;
+      background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$title-color);
+    }
+  }
+
+  &__article-title,
+  &__article-text {
+    margin-bottom: 16px;
+  }
+
+  &__brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: $block-bg;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+  }
+}
