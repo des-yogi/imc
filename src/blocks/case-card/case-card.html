@@ -1,0 +1,27 @@
+<!--DEV
+@ @include('blocks/case-card/case-card.html', {
+  "img": "case-1",
+  "title": 'Мережа АЗС АМІК',
+})
+-->
+
+<a href="#" class="case-card">
+  <div class="embed-responsive embed-responsive--4-3  case-card__img">
+    <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1280px)">
+      <!-- 384x288 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 660x495 -->
+      <source srcset="img/@@img.webp" media="(min-width: 360px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 360px)">
+      <!-- 700x525 -->
+
+      <img src="img/@@img.jpg" width="700" height="525" alt="Alt text" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="case-card__text">
+    <span>@@title</span>
+  </div>
+</a>

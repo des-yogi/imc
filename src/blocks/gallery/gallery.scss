@@ -1,0 +1,30 @@
+.gallery {
+  padding-top: 40px;
+  padding-bottom: 40px - 24px;
+  background-color: $block-bg;
+
+  @media (min-width: $screen-md) {
+    padding-top: 96px;
+    padding-bottom: 96px - 24px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 6);
+    @include col(lg, 4);
+    //@include col(xl, 8);
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+
+    img {
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

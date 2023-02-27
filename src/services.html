@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Послуги</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Просимо вибачення, але це утруднює використання даного сайту. You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main-content">
+
+        <div class="container  service-card__services">
+
+          <h1>Послуги</h1>
+
+          <div class="row  service-card__wrapper" role="list">
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "Доступ до мережі Інтернет",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "1"
+              })
+            </div>
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "Корпоративні мережі",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет. Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "2"
+              })
+            </div>
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "Захист інформації",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "3"
+              })
+            </div>
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "IoT мережі",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "4"
+              })
+            </div>
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "Побудова ВОЛЗ",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "5"
+              })
+            </div>
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "Послуги операторам",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "6"
+              })
+            </div>
+
+            <div class="service-card__col" role="listitem">
+              @@include('blocks/service-card/service-card.html', {
+                "title": "Відеонагляд",
+                "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
+                "num": "7"
+              })
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+      @@include('blocks/review-block/review-block.html')
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-modal/search-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+.service-page {
+  padding-top: 64px;
+  //padding-bottom: 80px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__main-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  &__aside-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 4);
+  }
+
+  &__main {
+
+    h2:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__aside {
+
+    @media (max-width: $screen-xl - 1) {
+      display: none;
+    }
+  }
+
+  &__aside-title {
+    margin-bottom: 16px;
+  }
+
+  &__cases {
+    padding-top: 64px;
+    padding-bottom: 64px - 24px;
+    border-top: 1px solid $border-color;
+
+    &--last {
+      padding-bottom: 96px - 24px;
+    }
+  }
+
+  &__cases-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4);
+    margin-bottom: 24px;
+  }
+}

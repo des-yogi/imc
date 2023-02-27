@@ -1,0 +1,50 @@
+.service-link {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 24px 72px 24px 24px;
+    font-size: $font-size-lg;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+    color: $title-color;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right 24px bottom 24px;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-down-right.svg', fill=$title-color);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    &:hover,
+    &:focus {
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-down-right.svg', fill=$link-color--hover);
+    }
+  }
+
+  &__icon {
+    flex: 0 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+    background-color: $block-bg;
+    border-radius: $border-radius-lg;
+
+    svg {
+      fill: $title-color;
+    }
+  }
+}

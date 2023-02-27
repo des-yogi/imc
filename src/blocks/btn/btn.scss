@@ -43,7 +43,7 @@
     cursor: not-allowed;
     color: $text-muted; //gray-1
     background-color: $block-bg;
-    border-color: $block-bg;
+    border-color: $gray-2;
 
     @at-root a.btn--disabled {
       pointer-events: none;

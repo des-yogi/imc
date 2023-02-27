@@ -1,0 +1,82 @@
+.faq {
+  margin-top: 64px;
+  margin-bottom: 80px;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 80px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+
+  &__header {
+    margin: 0 !important;
+    font-size: 20px;
+  }
+
+  &__btn {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 24px 50px 24px 16px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: initial;
+    border: none;
+    border-radius: $border-radius-lg;
+    background-color: $block-bg;
+    cursor: pointer;
+
+    @media (min-width: $screen-md) {
+      padding-left: 24px;
+    }
+
+    &::after,
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      top: 50%;
+      right: 18px;
+      background-color: $main-color;
+    }
+
+    &::after {
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      transform: translateY(-50%) rotate(-90deg);
+      transition: transform $transition-time;
+    }
+
+    &[aria-expanded=true] {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &::before {
+        transform: translateY(-50%) rotate(-180deg); // -180
+      }
+    }
+  }
+
+  &__body {
+    padding: 0 16px 24px 16px;
+    background-color: $block-bg;
+    border-bottom-left-radius: $border-radius-lg;
+    border-bottom-right-radius: $border-radius-lg;
+
+    @media (min-width: $screen-md) {
+      padding: 0 24px 24px;
+    }
+  }
+}

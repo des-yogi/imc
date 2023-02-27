@@ -21,6 +21,10 @@
     }
   }
 
+  &__services {
+    padding-bottom: 40px; // +24
+  }
+
   &__col {
     @include col(xs, 12);
     @include col(xl, 6);
@@ -71,10 +75,6 @@
 
   &__title {
     margin-top: 0 !important;
-  }
-
-  &__intro {
-
   }
 
   &__btn {
