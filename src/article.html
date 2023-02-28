@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Стаття</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Просимо вибачення, але це утруднює використання даного сайту. You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main-content">
+
+        <article class="container  article">
+          <div class="row">
+            <div class="article__col">
+
+              <h1 class="article__title">H1 Text page</h1>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+              <blockquote>
+                <p>За час нашої співпраці претензій і зауважень не було. Співробітниками "IMC" виконували свою роботу якісно. Як керівниками так і співробітниками був продемонстрований високий професіоналізм, тактовність і етика ділового спілкування.</p>
+              </blockquote>
+
+              <img src="img/gallery-1-big.jpg" alt="">
+
+              <h2>H2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+              <h3>H3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+
+              <div class="table-mobile-scroll">
+                <table>
+                  <caption>table title and/or explanatory text</caption>
+                  <thead>
+                    <tr>
+                      <th>header 1</th>
+                      <th>header 2</th>
+                      <th>header 3</th>
+                      <th>header 4</th>
+                      <th>header 5</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>data</td>
+                      <td>data</td>
+                      <td>data</td>
+                      <td>data</td>
+                      <td>data</td>
+                    </tr>
+                    <tr>
+                      <td>data</td>
+                      <td>data</td>
+                      <td>data</td>
+                      <td>data</td>
+                      <td>data</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
+            </div>
+          </div>
+        </article>
+
+      </main>
+
+      <section class="container  news-card__wrapper" style="padding-bottom: 96px;">
+
+        <div class="header-block">
+          <h2 class="header-block__title">Інші новини</h2>
+          <a href="#" class="header-block__link">Усі новини</a>
+        </div>
+
+        <div class="row" role="list">
+
+          <div class="news-card__col" role="listitem">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "news-1",
+              "title": 'Компанія «ІМК» підтвердила відповідність своїх виробничих процесів вимогам…',
+              "intro": ''
+            })
+          </div>
+
+          <div class="news-card__col" role="listitem">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "news-2",
+              "title": 'Компанія «ІМК» підтвердила відповідність…',
+              "intro": ''
+            })
+          </div>
+
+          <div class="news-card__col" role="listitem">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "news-3",
+              "title": 'Компанія «ІМК» підтвердила відповідність своїх виробничих процесів вимогам…',
+              "intro": ''
+            })
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-modal/search-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

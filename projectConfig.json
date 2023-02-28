@@ -40,7 +40,18 @@
     "service-page": [],
     "media-top": [],
     "faq": [],
-    "case-page": []
+    "case-page": [],
+    "contacts": [],
+    "social-links": [],
+    "contact-form": [],
+    "addlinks-block": [],
+    "resume-form": [],
+    "page-404": [],
+    "search-result": [],
+    "about-page": [],
+    "jobs": [],
+    "article": [],
+    "team-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

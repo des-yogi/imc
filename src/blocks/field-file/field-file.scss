@@ -3,7 +3,7 @@
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   &__name {
     @include field-name;
@@ -12,7 +12,6 @@
   &__input-wrap {
     display: block;
     position: relative;
-    pointer-events: none;
   }
 
   &__input {
@@ -23,13 +22,11 @@
 
     &:active ~ .field-file__name-text,
     &:focus-visible ~ .field-file__name-text {
-      //@include field-focus;
+      @include field-focus;
 
       &::before {
-        @include field-focus;
         color: $link-color--hover;
-        border-color: $link-color--hover;
-        background-image: svg-load('../blocks/field-file/bg-img/upload-simple.svg', fill=$main-color);
+        background-image: svg-load('../blocks/field-file/bg-img/upload-icon.svg', fill=$main-color);
         //background-color: darken($gray-lightest, 10%); // как у обычных кнопок
       }
     }
@@ -41,33 +38,47 @@
     flex-direction: column;
     align-items: baseline;
     width: 100%;
-    padding: 0;
-    font-size: 16px;
-    background-color: $white;
-    border-radius: 0;
+    padding: 16px 24px;
+    //padding-left: $field-padding-horizontal;
+    padding-bottom: $field-padding-vertical;
+    font-size: 14px;
+    background-color: $body-bg;
+    border: 1px solid $border-color;
+    //border-top-color: transparent;
+    //border-right-color: transparent;
+    //border-left-color: transparent;
+    border-radius: $border-radius;
     white-space: nowrap;
-    //overflow: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
+
+    // span {
+    //   font-size: smaller;
+    //   opacity: 0.8;
+    // }
 
     &::before {
       content: attr(data-button-text);
       display: block;
       width: 100%;
+      background-color: $body-bg;
+      //border-right: 2px solid $border-color;
+      //margin-right: $field-padding-horizontal;
       margin-right: 0;
-      padding: $field-padding-vertical $field-padding-horizontal;
-      padding-right: 60px;
+      font-weight: 500;
       line-height: $line-height;
-      color: $main-color;
-      //background-color: $white;
+      //padding-top: $field-padding-vertical;
+      padding-bottom: $field-padding-vertical;
+      padding-left: 0;
+      padding-right: 60px;
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
       background-repeat: no-repeat;
-      background-position: right 12px center;
+      background-position: right center;
       background-size: 24px;
-      background-image: svg-load('../blocks/field-file/bg-img/upload-simple.svg', fill=$link-color);
-      border: 1px solid $border-color;
-      border-radius: $border-radius;
-      transition: all $transition-time;
-      cursor: pointer;
-      pointer-events: auto;
+      background-image: svg-load('../blocks/field-file/bg-img/upload.svg', fill=$text-color);
+      transition: all $transition-time ease;
     }
 
     &:hover,
@@ -76,24 +87,14 @@
 
       &::before {
         color: $link-color--hover;
-        border-color: $link-color--hover;
-        background-image: svg-load('../blocks/field-file/bg-img/upload-simple.svg', fill=$link-color--hover);
+        background-image: svg-load('../blocks/field-file/bg-img/upload.svg', fill=$link-color--hover);
         //background-color: darken($gray-lightest, 10%); // как у обычных кнопок
       }
-    }
-
-    span {
-      display: block;
-      width: 100%;
-      padding: 8px 16px 8px 16px;
-      font-size: $font-size-sm;
-      color: $text-muted;
     }
   }
 
   &__file-name {
-    font-weight: 500 !important;
-    color: $title-color !important;
+    font-size: 14px;
   }
 
   &__help-text {

@@ -47,4 +47,23 @@
       fill: $title-color;
     }
   }
+
+  &--about {
+    @include row(
+      $xs-grid-gutter:  $grid-gutter-width,
+      $sm-grid-gutter:  $grid-gutter-width,
+      $md-grid-gutter:  $grid-gutter-width,
+      $lg-grid-gutter:  $grid-gutter-width,
+      $xl-grid-gutter:  $grid-gutter-width,
+      $xxl-grid-gutter: $grid-gutter-width
+    );
+
+    #{$block-name}__item {
+      @include col(xs, 12);
+      @include col(md, 6);
+      @include col(xl, 4);
+      margin-top: 0 !important;
+      margin-bottom: 24px;
+    }
+  }
 }

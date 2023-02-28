@@ -1,12 +1,19 @@
 .media-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  min-height: 370px;
+  min-height: 554px;
   padding-bottom: 40px;
   color: $white;
   background-color: $gray;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $screen-md) {
+    min-height: 430px;
+  }
 
   @media (min-width: $screen-xl) {
     padding-bottom: 64px;
@@ -54,7 +61,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba($black, 0.4);
+    background-color: rgba($black, 0.6);
     overflow: hidden;
 
     &::before,

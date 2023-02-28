@@ -1,0 +1,88 @@
+<!--DEV
+@ @include('blocks/resume-form/resume-form.html')
+
+-->
+
+<section class="container  order-form  resume-form">
+
+  <div class="row  order-form__text-wrapper">
+    <div class="order-form__text-col">
+      <h2 class="visually-hidden">Форма резюме</h2>
+      <p class="h3  order-form__subtitle">Надішліть ваше резюме</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed.</p>
+    </div>
+  </div>
+
+  <form class="order-form__form" action="#" method="post" enctype="multipart/form-data">
+    <div class="row">
+
+      <div class="order-form__form-left-col">
+        <label class="field-text">
+          <span class="field-text__name">Ім'я</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="name" value="" required>
+            <span class="field-text__help-text  error"></span>
+          </span>
+        </label>
+
+        <label class="field-text">
+          <span class="field-text__name">Прізвище</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="surname" value="" required>
+            <span class="field-text__help-text  error"></span>
+          </span>
+        </label>
+
+        <label class="field-text">
+          <span class="field-text__name">Телефон</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input  phone-mask" type="tel" name="tel" value="" required>
+            <span class="field-text__help-text  error"></span>
+          </span>
+        </label>
+
+        <label class="field-text">
+          <span class="field-text__name">Email</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="email" name="email" value="" required>
+            <span class="field-text__help-text  error"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="order-form__form-right-col">
+        <label class="field-text">
+          <span class="field-text__name">Повідомлення</span>
+          <span class="field-text__input-wrap">
+            <textarea class="field-text__input" name="message" required></textarea>
+            <span class="field-text__help-text  error"></span>
+          </span>
+        </label>
+
+        <div class="field-file">
+          <div class="field-file__name">Прикріпити резюме (doc, pdf)</div>
+          <label class="field-file__input-wrap">
+            <input class="field-file__input" type="file" data-multiple-caption="файлів вибрано: {count}" accept=".doc, .docx, .pdf">
+            <div class="field-file__name-text" data-button-text="Вибрати файл(и)">
+              Нічого не вибрано
+            </div>
+            <div class="field-file__help-text"></div>
+          </label>
+        </div>
+
+        <div class="field-actions  field-actions__agreement">
+          <!-- <div class="field-actions__text">* — обязательные поля</div> -->
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+              <span class="field-checkbox__name-text">Я згоден на обробку персональних даних відповідно до <a href="#">Політики конфіденційності</a></span>
+            </label>
+          </div>
+
+          <button class="btn" type="submit"><span>Відправити</span></button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</section>

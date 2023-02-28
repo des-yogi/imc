@@ -1,0 +1,47 @@
+.about-page {
+  padding-top: 64px;
+  padding-bottom: 80px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .faq {
+    margin-bottom: 0;
+  }
+
+  &__narrow-col,
+  &__intro-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+
+    &:not(#{$block-name}__intro-col) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__intro-col {
+    margin-bottom: 40px;
+  }
+
+  &__full-col {
+    @include col(xs, 12);
+  }
+
+  &__content {
+
+    & > *:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
+  &__team-title {
+    margin-top: 0 !important;
+  }
+
+  &__team-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4);
+    margin-bottom: 24px;
+  }
+}

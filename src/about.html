@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Про компанію</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Просимо вибачення, але це утруднює використання даного сайту. You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <div class="media-top"
+        style="background-image: url('/img/about-bg.webp')"
+        data-bg="/img/about-bg.jpg"
+        data-bg-webp="/img/about-bg.webp"
+      >
+        <div class="media-top__overlay" aria-hidden="true"></div>
+
+        @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+        <div class="container  media-top__text-wrapper" aria-hidden="true">
+          <div class="row">
+            <div class="media-top__text-col">
+              <p class="h1 media-top__title">Компанія</p>
+              <div class="media-top__text">
+                <p>Охорону офісу, житлового будинку, території підприємства чи об’єкту соціальної сфери в сучасних умовах неможливо уявити без якісної та надійної системи відеоспостереження.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <main class="main-content">
+
+        <article class="container  about-page">
+          <div class="row">
+
+            <div class="about-page__narrow-col">
+              <div class="about-page__content">
+                <h2>H2</h2>
+                <p>Мета створення такої системи — постійний моніторинг в режимі реального часу та відеофіксація того, що відбувається на об’єкті.</p>
+                <p>Встановлення системи відеоспостереження – це вигідна інвестиція, за допомогою якої можна вирішувати цілу низку як безпекових, так і бізнесових питань:</p>
+
+                <ul>
+                  <li>Запобігати крадіжкам, вандалізму та псуванню майна.</li>
+                  <li>Швидко зреагувати на ситуацію, що сталася.</li>
+                  <li>Мати докази у разі необхідності доведення злочину або правопорушення.</li>
+                  <li>Обмежити доступ сторонніх осіб.</li>
+                  <li>Проводити аналіз відвідуваності та поведінки клієнтів.</li>
+                  <li>Контролювати ефективність використання робочого часу персоналом.</li>
+                  <li>і т.п.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-page__full-col">
+              <section class="about-page__team">
+
+                <div class="row">
+                  <div class="about-page__intro-col">
+                    <div class="about-page__team-intro">
+                      <h2 class="about-page__team-title">Команда</h2>
+                      <p>Мета створення такої системи — постійний моніторинг в режимі реального часу та відеофіксація того, що відбувається на об’єкті.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" role="list">
+
+                  <div class="about-page__team-col" role="listitem">
+                    @@include('blocks/team-card/team-card.html', {
+                      "img": "team-1",
+                      "name": "Прізвище Ім'я",
+                      "position": "Посада",
+                    })
+                  </div>
+
+                  <div class="about-page__team-col" role="listitem">
+                    @@include('blocks/team-card/team-card.html', {
+                      "img": "team-2",
+                      "name": "Прізвище Ім'я",
+                      "position": "Посада",
+                    })
+                  </div>
+
+                  <div class="about-page__team-col" role="listitem">
+                    @@include('blocks/team-card/team-card.html', {
+                      "img": "team-3",
+                      "name": "Прізвище Ім'я",
+                      "position": "Посада",
+                    })
+                  </div>
+
+                  <div class="about-page__team-col" role="listitem">
+                    @@include('blocks/team-card/team-card.html', {
+                      "img": "team-1",
+                      "name": "Прізвище Ім'я",
+                      "position": "Посада",
+                    })
+                  </div>
+
+                  <div class="about-page__team-col" role="listitem">
+                    @@include('blocks/team-card/team-card.html', {
+                      "img": "team-2",
+                      "name": "Прізвище Ім'я",
+                      "position": "Посада",
+                    })
+                  </div>
+
+                </div>
+              </section>
+            </div>
+
+            <div class="about-page__narrow-col" style="margin-top:-24px; margin-bottom:0;">
+              @@include('blocks/faq/faq.html')
+            </div>
+
+          </div>
+        </article>
+
+      </main>
+
+      @@include('blocks/order-form/order-form.html')
+
+      @@include('blocks/addlinks-block/addlinks-block.html')
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/search-modal/search-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
