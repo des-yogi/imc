@@ -1,0 +1,16 @@
+.jobs {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__vacancy-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+    margin-bottom: 64px;
+  }
+
+  &__form-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+  }
+}

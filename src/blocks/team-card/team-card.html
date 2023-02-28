@@ -1,0 +1,22 @@
+<!--DEV
+@ @include('blocks/team-card/team-card.html', {
+  "img": "team-1",
+  "name": "Прізвище Ім'я",
+  "position": "Посада",
+})
+-->
+
+<figure class="team-card">
+  <div class="embed-responsive embed-responsive--4-3  team-card__img">
+    <picture>
+      <source srcset="img/@@img.webp">
+      <img src="img/@@img.jpg" alt="@@name" width="" height="" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="team-card__text">
+    <figcaption>
+      <span class="team-card__name">@@name</span>
+      <span class="team-card__position">@@position</span>
+    </figcaption>
+  </div>
+</figure>

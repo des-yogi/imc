@@ -1,0 +1,22 @@
+.addlinks-block {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: $block-bg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__intro-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+    margin-bottom: 40px;
+  }
+
+  &__link-wrapper-col {
+    @include col(xs, 12);
+  }
+
+  &__subtitle {
+    margin-top: 0 !important;
+  }
+}

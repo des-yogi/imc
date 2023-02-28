@@ -1,0 +1,19 @@
+.article {
+  padding-bottom: 64px;
+  border-bottom: 1px solid $border-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    margin: 64px 0;
+    border-radius: $border-radius-lg;
+  }
+}

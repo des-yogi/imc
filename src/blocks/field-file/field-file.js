@@ -35,11 +35,11 @@
   var inputs = document.querySelectorAll( '.field-file__input' );
   Array.prototype.forEach.call( inputs, function( input )
   {
-    const label  = closest(input, '.field-file').querySelector( '.field-file__name-text' ),
+    var label  = closest(input, '.field-file').querySelector( '.field-file__name-text' ),
         labelVal = label.innerHTML;
 
     input.addEventListener( 'change', function( e ) {
-      let fileName = '';
+      var fileName = '';
       if( this.files && this.files.length > 1 ) {
         fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
       }
@@ -48,10 +48,10 @@
       }
 
       if( fileName ) {
-        label.innerHTML = `<span class="field-file__file-name">${fileName}</span>`;
+        label.innerHTML = `<span class="field-file__file-name"> ${fileName} </span>`;
       }
       else {
-        label.innerHTML = `<span class="field-file__file-name">${labelVal}</span>`;
+        label.innerHTML = labelVal;
       }
     });
   });
