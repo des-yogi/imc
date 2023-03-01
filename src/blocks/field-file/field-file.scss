@@ -26,7 +26,7 @@
 
       &::before {
         color: $link-color--hover;
-        background-image: svg-load('../blocks/field-file/bg-img/upload-icon.svg', fill=$main-color);
+        background-image: svg-load('../blocks/field-file/bg-img/upload.svg', fill=$main-color);
         //background-color: darken($gray-lightest, 10%); // как у обычных кнопок
       }
     }

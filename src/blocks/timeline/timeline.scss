@@ -1,0 +1,134 @@
+.timeline {
+
+  $block-name:                &; // #{$block-name}__element
+
+  li {
+    margin: 0;
+  }
+
+  &__year {
+    padding-left: 32px;
+
+    &:last-child {
+
+      #{$block-name}__month {
+
+        &:last-child {
+          padding-bottom: 0;
+
+          &::before {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  &__year-title {
+    position: relative;
+    padding-bottom: 48px;
+    margin: 0 !important;
+
+    &::before {
+      display: block !important;
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: -15px;
+      left: -27px;
+      width: 2px;
+      background: repeating-linear-gradient(to bottom, $main-color, $main-color 16px, $white 16px, $white 28px);
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -33px;
+      width: 14px;
+      height: 14px;
+      background-color: $white;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+    }
+  }
+
+  &__month {
+    position: relative;
+    padding-bottom: 48px;
+
+    &::before {
+      display: block !important;
+      content: "";
+      position: absolute;
+      top: 5px;
+      bottom: -15px;
+      left: -27px;
+      width: 2px;
+      background: repeating-linear-gradient(to bottom, $main-color, $main-color 16px, $white 16px, $white 28px);
+    }
+
+    p {
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__month-title {
+    position: relative;
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -33px;
+      width: 14px;
+      height: 14px;
+      background-color: $white;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+    }
+  }
+
+  &__img-wrapper {
+    margin: 16px 0 0;
+
+    &--more {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      #{$block-name}__img {
+
+        &:first-child {
+          margin-bottom: 24px;
+
+          @media (min-width: $screen-md) {
+            margin-bottom: 0;
+          }
+        }
+
+        @media (min-width: $screen-md) {
+          flex: 0 1;
+          flex-basis: calc(50% - 12px);
+        }
+      }
+    }
+  }
+
+  #{$block-name}__img-wrapper + * {
+    margin-top: 16px;
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: $border-radius-lg;
+  }
+}

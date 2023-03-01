@@ -1,0 +1,34 @@
+.documents {
+  padding-bottom: 96px;
+  //background-color: $block-bg;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(lg, 4);
+    @include col(xl, 3);
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__fig {
+    margin: 0;
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: $border-radius-lg;
+  }
+
+  &__caption {
+    padding-top: 16px;
+    font-size: $font-size-sm;
+    font-weight: 500;
+  }
+}
