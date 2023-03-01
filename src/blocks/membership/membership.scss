@@ -1,0 +1,66 @@
+.membership {
+  padding-bottom: 96px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(xl, 8);
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__logo-col {
+    @include col(xs, 12);
+    @include col(xl, 4);
+  }
+
+  &__text,
+  &__logo {
+    height: 100%;
+    padding: 24px;
+    border-radius: $border-radius-lg;
+    background-color: $block-bg;
+    background-size: 100%;
+    background-repeat: repeat;
+    background: url(/img/noise.svg), linear-gradient(to top, $gray-lightest);
+    background-blend-mode: screen, luminosity;
+  }
+
+  &__cap {
+    margin-top: 0 !important;
+  }
+
+  &__link {
+    padding: 8px 0;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 130px;
+
+    img {
+      max-width: 170px;
+      max-height: 128px;
+    }
+  }
+}

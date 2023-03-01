@@ -1,0 +1,15 @@
+.history {
+  padding-bottom: 96px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  &__hrono {
+    margin-top: 48px;
+  }
+}

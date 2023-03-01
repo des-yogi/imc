@@ -9,14 +9,21 @@
 <figure class="team-card">
   <div class="embed-responsive embed-responsive--4-3  team-card__img">
     <picture>
-      <source srcset="img/@@img.webp">
-      <img src="img/@@img.jpg" alt="@@name" width="" height="" loading="lazy" decoding="async">
+      <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1280px)">
+      <!-- 384x288 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 660x495 -->
+      <source srcset="img/@@img.webp" media="(min-width: 360px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 360px)">
+      <!-- 700x525 -->
+
+      <img src="img/@@img.jpg" alt="@@name" width="700" height="525" loading="lazy" decoding="async">
     </picture>
   </div>
-  <div class="team-card__text">
-    <figcaption>
-      <span class="team-card__name">@@name</span>
-      <span class="team-card__position">@@position</span>
-    </figcaption>
-  </div>
+  <figcaption class="team-card__text">
+    <span class="team-card__name">@@name</span>
+    <span class="team-card__position">@@position</span>
+  </figcaption>
 </figure>
