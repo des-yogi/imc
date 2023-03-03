@@ -55,7 +55,8 @@
     "history": [],
     "documents": [],
     "membership": [],
-    "timeline": []
+    "timeline": [],
+    "hero": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

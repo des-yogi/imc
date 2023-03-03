@@ -17,6 +17,7 @@
   -ms-text-size-adjust: 100%; // stylelint-disable-line  property-no-vendor-prefix
   min-width: 360px;
   min-height: 100%;
+  scroll-behavior: smooth;
 
   &__inner {
     min-height: 100vh;
@@ -388,6 +389,7 @@ a {
 
 .swiper-lazy-preloader {
   border-color: $main-color;
+  border-top-color: $block-bg;
 }
 
 // Swiper 9 End
