@@ -16,6 +16,13 @@
     margin-top: 0 !important;
   }
 
+  &__intro {
+
+    a {
+      padding: 8px 0;
+    }
+  }
+
   &__slide {
     width: 336px;
 
@@ -29,6 +36,10 @@
       font-weight: 500;
       line-height: 1.3;
     }
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__img {
