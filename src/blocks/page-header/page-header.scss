@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 1;
   background-color: $white;
 
   $block-name:                &; // #{$block-name}__element

@@ -1,61 +1,110 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/main-nav/main-nav.html')
+-->
 
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<nav id="main-nav" class="main-nav" role="navigation">
-  <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+<nav id="main-nav" class="main-nav">
   <ul class="main-nav__list">
-    <li class="main-nav__item  main-nav__item--active">
-      <a href="" class="main-nav__link">
-        Страницы
+    <li class="main-nav__item  main-nav__item--parent">
+      <a href="#" class="main-nav__link">
+        <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#menu"></use></svg>
+        <span>Послуги</span>
       </a>
-      <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
-        <ul class="main-nav__list  main-nav__list--lvl-2">
-          <li class="main-nav__item  main-nav__item--lvl-2">
-            <a href="" class="main-nav__link  main-nav__link--lvl-2">
-              Контакты
-            </a>
-          </li>
-          <li class="main-nav__item  main-nav__item--lvl-2">
-            <a href="" class="main-nav__link  main-nav__link--lvl-2">
-              Услуги
-            </a>
-            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
-              <ul class="main-nav__list  main-nav__list--lvl-3">
-                <li class="main-nav__item  main-nav__item--lvl-3">
-                  <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                    Вёрстка HTML-CSS
-                  </a>
-                </li>
-                <li class="main-nav__item  main-nav__item--lvl-3">
-                  <a href="" class="main-nav__link  main-nav__link--lvl-3">
-                    Стриптиз
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__sublist">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Доступ до мережі Інтернет</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Корпоративні мережі</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Захист інформації</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>IoT мережі</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Побудова ВОЛЗ</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Послуги операторам</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Відеонагляд</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav__item  main-nav__item--parent">
+      <a href="#" class="main-nav__link">
+        <span>Компанія</span>
+      </a>
+      <ul class="main-nav__sublist">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Історія</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Документи</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Членство в асоціаціях</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Нагороди та відзнаки</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#wifi"></use></svg>
+            <span>Вакансії</span>
+          </a>
+        </li>
+      </ul>
     </li>
     <li class="main-nav__item">
-      <a href="https://github.com/nicothin/NTH-start-project" class="main-nav__link">
-        Репозиторий
+      <a href="#" class="main-nav__link">
+        <span>Наші проекти</span>
       </a>
     </li>
     <li class="main-nav__item">
-      <a href="http://nicothin.pro/" class="main-nav__link">
-        Сайт автора
+      <a href="#" class="main-nav__link">
+        <span>Новини</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">
+        <span>Контакти</span>
       </a>
     </li>
   </ul>
 </nav>
-
--->

@@ -6,6 +6,74 @@
 
 -->
 
-<footer class="page-footer">
-  page-footer
+<footer class="container  page-footer">
+  <div class="row  page-footer__inner">
+
+    <section class="page-footer__menu-col">
+      <h3 class="h6  page-footer__subtitle">Послуги</h3>
+      <nav>
+        <ul class="row  list-nostyled  page-footer__menu">
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">Доступ до мережі Інтернет</a>
+          </li>
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">Корпоративні мережі</a>
+          </li>
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">Захист інформації</a>
+          </li>
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">IoT мережі</a>
+          </li>
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">Побудова ВОЛЗ</a>
+          </li>
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">Послуги операторам</a>
+          </li>
+          <li class="page-footer__menu-inner-col">
+            <a href="#" class="page-footer__link">Відеонагляд</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="page-footer__tel-col">
+      <div class="row  page-footer__tel">
+
+        <section class="page-footer__tel-inner-col">
+          <h3 class="h6  page-footer__subtitle">Телефони</h3>
+          <ul class="list-nostyled  page-footer__tel-inner">
+            <li class="page-footer__tel-item">
+              <a href="tel:+380442803128" class="page-footer__link">044 280 31 28</a>
+            </li>
+            <li class="page-footer__tel-item">
+              <a href="tel:+380442803128" class="page-footer__link">044 280 31 28</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="page-footer__tel-inner-col">
+          <h3 class="h6  page-footer__subtitle">Технічна підтримка</h3>
+          <ul class="list-nostyled  page-footer__tel-inner">
+            <li class="page-footer__tel-item">
+              <a href="tel:+380504699674" class="page-footer__link">050 469 96 74</a>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <section class="page-footer__social-col">
+      <h3 class="visually-hidden">Посилання на соціальні мережі</h3>
+      @@include('../../blocks/social-links/social-links.html', {
+        "addClass": "social-links--footer"
+      })
+    </section>
+
+    <div class="page-footer__copyright-col">
+      @@include('../../blocks/copyrights/copyrights.html')
+    </div>
+  </div>
 </footer>

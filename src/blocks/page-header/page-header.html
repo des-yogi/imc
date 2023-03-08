@@ -1,9 +1,5 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-header/page-header.html')
-
 -->
 
 <header class="page-header">
@@ -40,14 +36,16 @@
         </ul>
       </div>
 
-      <button class="btn  btn--icon  btn--outline  burger" title="Мобільне меню">
+      <a href="#menu" class="btn  btn--icon  btn--outline  burger" title="Мобільне меню">
         <span class="visually-hidden">Відкрити мобільне меню</span>
         <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#menu"></use></svg>
-      </button>
+      </a>
 
     </div>
 
   </div>
 
-  <div class="page-header__menu-wrapper"></div>
+  <div class="container  page-header__menu-wrapper">
+    @@include('../../blocks/main-nav/main-nav.html')
+  </div>
 </header>
