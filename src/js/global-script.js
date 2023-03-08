@@ -92,11 +92,11 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 
 })();*/
 
-(function(){
-  const aLazyLoad = new LazyLoad({
-    elements_selector: ".lazy"
-  });
-}());
+// (function(){
+//   const aLazyLoad = new LazyLoad({
+//     elements_selector: ".lazy"
+//   });
+// }());
 
 (function(){
   // lazy video

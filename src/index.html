@@ -10,7 +10,7 @@
 <body>
 <noscript>У вас вимкнено JavaScript. Просимо вибачення, але це утруднює використання даного сайту. You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
 
-  <div class="page__inner">
+  <div id="page" class="page__inner">
 
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
@@ -73,9 +73,50 @@
 
   </div>
 
+  @@include('blocks/mmenu/mmenu.html')
+
   @@include('blocks/search-modal/search-modal.html')
 
   @@include('_include/page_bottom.html')
+
+  <script>
+    window.addEventListener(
+      "load", () => {
+        new Mmenu( "#menu", {
+          // options
+           "offCanvas": {
+              "position": "left-front"
+           },
+           "theme": "light",
+           "navbar": {
+            "title": '<img style="display:block;" src="img/imc-logo.svg" width="107" height="30" alt="IMC logo">',
+            "titleLink": "parent" //anchor or none
+           },
+           "navbars": [
+              {
+                 "position": "top",
+                 "type": "tabs",
+                 "content": [
+                    "<a href='#panel-menu'>Меню</a>",
+                    "<a href='#panel-tel'>Контакти</a>"
+                 ]
+              },
+              {
+                 "position": "top",
+                 "content": [
+                    "prev",
+                    "title"
+                 ]
+              }
+           ]
+        }, {
+            // configuration
+            "language": "uk" //en,ru,de…
+        });
+      }
+    );
+    //console.log(Mmenu.i18n());
+  </script>
 
 </body>
 </html>

@@ -12,6 +12,7 @@
 @import '../../node_modules/bootstrap/scss/_dropdown';
 @import '../../node_modules/bootstrap/scss/_modal';
 @import '../../node_modules/bootstrap/scss/_offcanvas';
+@import '../../node_modules/mmenu-js/dist/mmenu.css';
 @import '../../node_modules/swiper/swiper-bundle.css';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
@@ -70,4 +71,6 @@
 @import './src/blocks/membership/membership.scss';
 @import './src/blocks/timeline/timeline.scss';
 @import './src/blocks/hero/hero.scss';
+@import './src/blocks/copyrights/copyrights.scss';
+@import './src/blocks/mmenu/mmenu.scss';
 @import './src/scss/print.scss';
