@@ -3,10 +3,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  // &__title {
-
-  // }
-
   &__inner {
 
     @media (max-width: $screen-md - 1) {
@@ -19,8 +15,8 @@
   }
 
   &__slide {
-    width: 288px;
-    height: 161px;
+    width: 282px;
+    height: 162px;
     overflow: hidden;
     border-radius: $border-radius-lg;
 

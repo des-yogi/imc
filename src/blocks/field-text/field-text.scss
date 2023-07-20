@@ -40,13 +40,13 @@
       background-color: $block-bg;
     }
 
-    &[required] {
-      padding-right: 40px;
-      background-repeat: no-repeat;
-      background-size: 10px;
-      background-position: right 20px top 22px;
-      background-image: svg-load('../blocks/field-text/bg-img/asterisk.svg');
-    }
+    // &[required] {
+    //   padding-right: 40px;
+    //   background-repeat: no-repeat;
+    //   background-size: 10px;
+    //   background-position: right 20px top 22px;
+    //   background-image: svg-load('../blocks/field-text/bg-img/asterisk.svg');
+    // }
 
    /*  &[type='search']::-webkit-search-cancel-button,
     &[type='search']::-webkit-search-decoration {
@@ -74,6 +74,14 @@
       height: auto;
       min-height: calc(#{$textarea-height} + 2px);
       resize: vertical;
+    }
+
+    &--required {
+      padding-right: 40px;
+      background-repeat: no-repeat;
+      background-size: 8px;
+      background-position: right 18px top 23px;
+      background-image: svg-load('../blocks/field-text/bg-img/asterisk.svg', fill=$main-color);
     }
   }
 

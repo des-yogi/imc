@@ -329,7 +329,7 @@ a {
 .noise-bg {
   background-size: 100%;
   background-repeat: repeat;
-  background: url(/img/noise.svg), linear-gradient(to top, $gray-lightest);
+  background: url(../img/noise.svg), linear-gradient(to top, $gray-lightest);
   background-blend-mode: screen, luminosity;
 }
 
