@@ -24,7 +24,8 @@
   }
 
   &__slide {
-    width: 336px;
+    //width: 336px;
+    min-width: 250px;
 
     figure {
       margin: 0;

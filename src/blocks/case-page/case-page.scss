@@ -25,7 +25,7 @@
 
     img {
       max-width: 240px;
-      max-height: 128px;
+      max-height: 120px;
     }
   }
 
@@ -85,7 +85,7 @@
       padding: 24px;
       background-size: 100%;
       background-repeat: repeat;
-      background: url(/img/noise.svg), linear-gradient(to top, $gray-lightest);
+      background: url(../img/noise.svg), linear-gradient(to top, $gray-lightest);
       background-blend-mode: screen, luminosity;
 
       @media (min-width: $screen-xl) {
@@ -97,7 +97,7 @@
       padding: 56px 24px;
       background-size: 100%;
       background-repeat: repeat;
-      background: url(/img/noise.svg), linear-gradient(to top, $main-color);
+      background: url(../img/noise.svg), linear-gradient(to top, $main-color);
       background-blend-mode: luminosity;
 
       @media (min-width: $screen-md) {

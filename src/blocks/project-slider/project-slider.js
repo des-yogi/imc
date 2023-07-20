@@ -3,10 +3,11 @@
     speed: 400,
     slidesPerView: 'auto',
     spaceBetween: 24,
-    loop: true,
-    loopedSlides: 4,
+    //loop: true,
+    //loopedSlides: 4,
     autoplay: {
       delay: 5000,
     },
+    a11y: true,
   });
 }());
