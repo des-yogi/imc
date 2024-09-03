@@ -110,4 +110,36 @@
     will-change: transform;
     transition: transform $transition-time ease;
   }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 20px;
+    width: 64px;
+    height: 64px;
+    color: $link-color--hover;
+
+    @media (min-width: $screen-xl) {
+      right: 12px;
+      bottom: 12px;
+      width: 96px;
+      height: 96px;
+    }
+
+    svg {
+      width: 55px;
+      height: 55px;
+      stroke-width: 0.7px;
+      stroke: $link-color--hover;
+
+      @media (min-width: $screen-xl) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
 }
