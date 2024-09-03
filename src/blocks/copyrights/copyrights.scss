@@ -57,12 +57,6 @@
       margin-top: 0;
       margin-left: 8px;
     }
-
-    img {
-      display: block;
-      width: 59px;
-      height: 22px;
-    }
   }
 
   &__dev-link {
@@ -89,6 +83,12 @@
         display: block;
         margin-right: 8px;
       }
+    }
+
+    img {
+      display: block;
+      width: 92px;
+      height: 26px;
     }
   }
 }

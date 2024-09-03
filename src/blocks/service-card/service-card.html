@@ -2,7 +2,7 @@
 @ @include('blocks/service-card/service-card.html', {
   "title": "Доступ до мережі Інтернет",
   "intro": 'Реалізації масштабного проекту по розгортанню бездротової мережі для надання безкоштовного доступу в Інтернет.',
-  "num": "1"
+  "icon": "wifi"
 })
 -->
 
@@ -17,5 +17,8 @@
     </a>
   </div>
   <span class="service-card__spot" aria-hidden="true"></span>
-  <span class="service-card__num" aria-hidden="true">0@@num</span>
+  <span class="service-card__icon" aria-hidden="true">
+    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#@@icon"></use></svg>
+  </span>
+  <!-- <span class="service-card__num" aria-hidden="true">0@@num</span> -->
 </article>

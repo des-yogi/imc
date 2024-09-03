@@ -397,7 +397,6 @@ gulp.task('html', function() {
       basepath: '@file',
       indent: true,
     }))
-    .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(faviconData)).favicon.html_code))
     .pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
     .pipe(gulp.dest(dirs.buildPath));
 });
@@ -460,7 +459,7 @@ gulp.task('img:opt', function (callback) {
 // Сборка всего новая под gulp 4
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('sprite:svg', 'sprite:png', 'favicons'),
+  gulp.parallel('sprite:svg', 'sprite:png'),
   gulp.parallel('style', 'style:single', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'),
   'html'
 ));

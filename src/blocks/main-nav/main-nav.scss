@@ -26,6 +26,7 @@
 
             svg {
               margin-right: 12px;
+              stroke: currentColor;
             }
 
             &:hover,
@@ -44,6 +45,16 @@
         &.main-nav__item--parent {
 
           & > #{$block-name}__link {
+
+            &:hover,
+            &:focus {
+              color: $link-color--hover;
+              background-color: $link-bg--hover;
+
+              &::after {
+                background-image: svg-load('../blocks/sprite-svg/svg/chevron-down.svg', fill=$link-color--hover);
+              }
+            }
 
             &::after {
               right: 36px;
@@ -166,7 +177,11 @@
     }
 
     svg {
+      width: 24px;
+      height: 24px;
       margin-right: 12px;
+      stroke-width: 2px;
+      stroke: currentColor;
     }
   }
 }

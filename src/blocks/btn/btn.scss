@@ -32,10 +32,10 @@
   &:hover,
   &:focus,
   &:active {
-    color: $title-color;
+    color: $link-color--hover;
     text-decoration: none;
-    background-color: $link-color--hover;
-    border-color: $link-color--hover;
+    background-color: $link-bg--hover;
+    border-color: $link-bg--hover;
   }
 
   &--disabled,
