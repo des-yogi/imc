@@ -5,4 +5,9 @@
   @media (min-width: $screen-xl) {
     display: none;
   }
+
+  svg {
+    stroke-width: 2px;
+    stroke: currentColor;
+  }
 }
