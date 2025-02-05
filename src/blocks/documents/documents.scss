@@ -4,16 +4,55 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__col {
-    @include col(xs, 12);
-    @include col(md, 6);
-    @include col(lg, 4);
-    @include col(xl, 3);
+  .pagination {
+    margin-top: 40px;
+  }
+
+  &__section {
+
+    & + & {
+      margin-top: 40px;
+    }
+
+    .row {
+      gap: 32px 0;
+    }
+
+    .row--doc {
+      align-items: flex-start;
+    }
+  }
+
+  &__section-title {
     margin-bottom: 32px;
   }
 
+  &__col {
+    @include col(xs, 6);
+    @include col(md, 4);
+    @include col(lg, 3);
+    //@include col(xl, 2.4);
+    margin: 0;
+    //margin-bottom: 32px;
+  }
+
+  &__gal-link,
   &__link {
     text-decoration: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    padding: 12px;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    span {
+      font-size: $font-size-sm;
+      font-weight: 500;
+    }
   }
 
   &__fig {
